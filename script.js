@@ -4,15 +4,16 @@ let confirmIt;
 		return alert("Your browser does not support some functionality required for this site.  Please expect a limited experience.")
 	}
 
-	confirmIt = (confirmChainArr, cb) => {
-		if (!window.confirm(confirmChainArr.shift())) {
+	confirmIt = (confirmArr, cb) => {
+		if (!window.confirm(confirmArr.shift())) {
 			return false;
 		}
 
-		if (confirmChainArr.length < 1) {
-			return cb();
+		if (confirmArr.length < 1) {
+			cb();
+			return true;
 		} else {
-			return confirmIt(confirmChainArr, cb);
+			return confirmIt(confirmArr, cb);
 		}
 	}
 })()
