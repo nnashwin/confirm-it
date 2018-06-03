@@ -30,12 +30,12 @@ Will console.log if the user clicks yes to all the confirms
 confirmIt(['a', 'b', 'c'], () => {
 	console.log('finished')
 })
-```
 // If the user clicks through everything, will result in
 //=> true
 
 // Else
 //=> false
+```
 
 ## License
 
