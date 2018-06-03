@@ -1,5 +1,5 @@
 # confirmIt
-> Allowing you to chain confirms together to control behavior
+> Chain confirms together to control behavior
 
 ## Install
 Copy the script into your assets folder.  Include in the markup of your web page.
